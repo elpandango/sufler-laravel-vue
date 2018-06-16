@@ -1,0 +1,19 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Custom Styles
+@import "custom";
+
+.sliding-text {
+  /*Настройки*/
+  font-size: 70px;
+  -webkit-animation: text-slide 450s;
+  animation: text-slide 450s;
+}
