@@ -100,8 +100,11 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'text' => [
+            'required' => 'Текстовое поле должно быть заполнено',
+        ],
+        'speed' => [
+            'required' => 'Поле скорости прокрутки должно быть заполнено',
         ],
     ],
 

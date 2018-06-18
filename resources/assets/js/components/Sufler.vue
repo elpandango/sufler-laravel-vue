@@ -10,8 +10,6 @@
 </template>
 
 <script>
-    import axios from 'axios';
-
     export default {
         data() {
             return {
@@ -22,7 +20,6 @@
         },
         props: ['text', 'speed']
     }
-
 </script>
 
 <style>

@@ -24,7 +24,7 @@ class MessagesController extends Controller
         $message->save();
 
         //Redirect
-        return redirect('/')->with('success', 'Message Sent');
+        return redirect('/')->with('success', 'Текст был сохранен');
     }
 
     public function getTexts() {
