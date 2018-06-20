@@ -29,7 +29,8 @@ class MessagesController extends Controller
 
     public function getTexts() {
 //        $texts = Message::last();
-        $texts = Message::orderBy('created_at', 'desc')->get();
+        $texts = Message::orderBy('created_at', 'desc')->first();
+//        $texts = Message::orderBy('created_at', 'desc')->latest();
 
         return view('sufler')->with('texts', $texts);
     }

@@ -12,13 +12,20 @@
 </head>
 <body>
 
-@if(count($texts) > 0)
+
+@if(count($texts) > 1)
     @foreach($texts as $text)
         <div id="app">
             <sufler :text="'{{json_encode($text->text)}}'"
                     :speed="'{{json_encode($text->speed)}}'"></sufler>
         </div>
     @endforeach
+
+    @else
+    <div id="app">
+        <sufler :text="'{{json_encode($texts->text)}}'"
+                :speed="'{{json_encode($texts->speed)}}'"></sufler>
+    </div>
 @endif
 
 <script type="text/javascript" src="js/app.js"></script>
